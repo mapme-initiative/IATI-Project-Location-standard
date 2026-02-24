@@ -9,8 +9,10 @@
                 "1.0"
             ]
         },
-        "f_id": {
-            "description": "For new locations, this column is empty. For updates, your project counterpart will provide you with a list of unique field ID numbers in this file to ensure that updated location IDs match with the former ones.",
+        "column_1":{
+            "attribute_name": "Field ID",
+            "attribute_code": "f_id", 
+            "explanation": "For new locations, this column will be empty. For updates,  KfW will provide you with the list of f_id numbers of this file to ensure that the updated field ids match with the former ones.",
             "type": "string"
         },
         "donor_project_no": {
