@@ -68,12 +68,12 @@ Based on the defined requirements and the strengths and weaknesses of the variou
 **FieldMaps.io**
 
 **Key Advantages of FieldMaps.io**:
--1.	Comprehensive Coverage: The dataset includes administrative boundaries up to level 5 in some countries, enabling precise analysis.
--2.	High Detail: The dataset is highly detailed, making it suitable for use at all zoom levels.
--3.	Disputed Boundaries: Disputed areas, as defined by the United Nations, are included and can be easily selected using specific ISO3 codes. This allows users to merge the geometry of disputed areas with neighboring countries based on the intended audience.
--4.	Accessibility: The data is freely available with no usage restrictions.
--5.	Consistency: The dataset has been consistently maintained over the past five years.
--6.	Accuracy: When compared to more official datasets like FAO’s, there are minimal discrepancies in the names and geometries of administrative areas (only two countries show major differences).
+- 1.	Comprehensive Coverage: The dataset includes administrative boundaries up to level 5 in some countries, enabling precise analysis.
+- 2.	High Detail: The dataset is highly detailed, making it suitable for use at all zoom levels.
+- 3.	Disputed Boundaries: Disputed areas, as defined by the United Nations, are included and can be easily selected using specific ISO3 codes. This allows users to merge the geometry of disputed areas with neighboring countries based on the intended audience.
+- 4.	Accessibility: The data is freely available with no usage restrictions.
+- 5.	Consistency: The dataset has been consistently maintained over the past five years.
+- 6.	Accuracy: When compared to more official datasets like FAO’s, there are minimal discrepancies in the names and geometries of administrative areas (only two countries show major differences).
 -7.	Flexible Download Options: Users can download the dataset at the global level and by administrative level. Country-level data are also available by original data source; however, these country-specific files are provided without edge-matching across international boundaries.
 
 **Limitations of FieldMaps.io**:
