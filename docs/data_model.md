@@ -17,7 +17,7 @@ To all the above schemes, we still have to add the **geographic vocabulary/ies**
 and we have to add some additional project-specific attributes we want to assign to locations ->
 
 # Current Draft of location-level attributes for the Standard: 
-- ** Field ID** 
+- **Field ID** 
 - **Template Version** 
 - **Donor Project-No.** 
 - **Abbreviation of project name (project acronym)** ?
