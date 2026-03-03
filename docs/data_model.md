@@ -16,6 +16,25 @@ To all the above schemes, we still have to add the **geographic vocabulary/ies**
 
 and we have to add some additional project-specific attributes we want to assign to locations ->
 
+# Current Draft of location-level attributes for the Standard: 
+- ** Field ID** 
+- **Template Version** 
+- **Donor Project-No.** 
+- **Abbreviation of project name (project acronym)** ?
+- **Data Provider (Institution Name)** ?
+- **Publishing restrictions due to security reasons** ?
+- **Date of data collection or latest update** ?
+- **Related Community / Village / Neighborhood** ?
+- **Location name** ?
+- **Location Activity Status** ?
+- **Planned or actual start date of activity at the location** ? 
+- **Planned or actual end date of activity at the location** ?
+- **Activity Description** ?
+- **Location Type Theme** ?
+- **Location Type Name**
+- **Geographic Exactness**
+- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from admin unit respository OR other sector-specifi polyong repository like the IUCN Protected Areas repository 
+
 # Current Draft of project-level attributes for the Standard - all to be discussed:
 
 - **Donor Project-No.**
@@ -29,8 +48,7 @@ and we have to add some additional project-specific attributes we want to assign
 - **Project Executing / Implementing Agency(ies)** (of the project, downstream):
   [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? -> non longer maintained. Alternative?
 - **ESG category of the project?**  Vocabulary?
-- **Project team internally responsible for the data** (quality assurance): internal logic
-- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from admin unit respository OR other sector-specifi polyong repository like the IUCN Protected Areas repository     
+- **Project team internally responsible for the data** (quality assurance): internal logic    
 
 We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:
 - [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value.
