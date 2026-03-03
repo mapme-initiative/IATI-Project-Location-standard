@@ -29,7 +29,8 @@ and we have to add some additional project-specific attributes we want to assign
 - **Project Executing / Implementing Agency(ies)** (of the project, downstream):
   [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? -> non longer maintained. Alternative?
 - **ESG category of the project?**  Vocabulary?
-- **Project team internally responsible for the data** (quality assurance): internal logic  
+- **Project team internally responsible for the data** (quality assurance): internal logic
+- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from admin unit respository OR other sector-specifi polyong repository like the IUCN Protected Areas repository     
 
 We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:
 - [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value.
