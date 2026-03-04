@@ -24,7 +24,7 @@
             "type": "string"
         },
         "project_title": {
-            "attribute_name": "Project Title,
+            "attribute_name": "Project Title",
             "attribute_code": "project_title", 
             "description": "Enter the name/title of the project to be visible on all locations in your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
             "type": "string"
@@ -33,12 +33,6 @@
             "attribute_name": "Abbreviation of project name (project acronym)",
             "attribute_code": "project_acronym",
             "description": "Enter the acronym used for the name/title of the project (e.g. HREII) to be visible on your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
-            "type": "string"
-        },
-         "project_title": {
-            "attribute_name": "Project Title,
-            "attribute_code": "project_title", 
-            "description": "Enter the name/title of the project to be visible on all locations in your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
             "type": "string"
         },
         "dac5_subsector_code": {
