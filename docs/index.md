@@ -1,4 +1,4 @@
-Welcome to the [MAPME Community`s of Practice](https://www.mapme-initiative.org/) guide for collecting project location data in development cooperation. This website will describe how to collect and validate project locations according to the specifications of our data-model. If you have any questions, comments or suggestions for improvements, please open a ticket in our [Github repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard).
+Welcome to the [MAPME Community`s of Practice](https://www.mapme-initiative.org/) guide for collecting project location data in development cooperation. This website will describe how to collect and validate project locations according to the specifications of our data-model. If you have any questions, comments or suggestions for improvements, please contribute to our [Discussions](https://github.com/mapme-initiative/IATI-Project-Location-Standard/discussions) or open a ticket in our [Github repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard).
 
 ## Goals
 This guide: 
@@ -23,6 +23,10 @@ Gives you an overview of processes, formats and general information to collect a
 - [Data Collection Guidelines](./collection.md)
 - [Frequently Asked Questions](./faqs.md)
 - [Validation Process - not yet available](./validation.md)
+
+**Discussions**
+Provide your feedback, ideas, questions and propositions regarding for the new standard [here](https://github.com/mapme-initiative/IATI-Project-Location-Standard/discussions) 
+
   
 **Annex 1**
 Contains Excel Templates to collect location-specific data according to our model
