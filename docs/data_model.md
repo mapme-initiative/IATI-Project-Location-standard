@@ -1,4 +1,8 @@
-The **Project Location Data Model** to be standardized is a combination of location-specific, project-specific and geospatial attributes that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/) 
+The **Project Location Data Model** to be standardized is a combination of:
+- [location-specific](#current-draft-of-location-level-attributes-for-the-standard), 
+- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and 
+- [geospatial](#geospatial-attributes)
+attributes that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
 # Current Draft of Location-level Attributes for the Standard 
 (as per Excel Template and JSON Scheme below): 
