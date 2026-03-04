@@ -1,12 +1,14 @@
 The **Project Location Data Model** to be standardized is a combination of:
-- [location-specific](#current-draft-of-location-level-attributes-for-the-standard), 
-- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and 
+- [location-specific](#current-draft-of-location-level-attributes-for-the-standard),
+- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and
 - geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)
 that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
 
+
 # Current Draft of Location-level Attributes for the Standard 
 (as per Excel Template and JSON Scheme below): 
+
 - **Field ID** 
 - **Template Version** - this could also be part of the project-level attributes below
 - **Donor Project-No.** - this is also be part of the project-level attributes below
@@ -24,10 +26,12 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Location Type Name**
 - **Geographic Exactness**
 - **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
+
   
 
 # Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):
+
 - **Donor Project-No.** 
 - **Project Title (which language(s)?)**
 - **Abbreviation of project name (project acronym)** ?
@@ -48,6 +52,7 @@ We recommend not to use the following IATI standard elements for our proposed ne
 - [Geographical Precision](https://iatistandard.org/en/iati-standard/203/codelists/geographicalprecision/): these categories contain overlaps with other categories and its most important elements are already covered by the new proposed categories of exactness together with the location types schema.
 
 
+
 # Data Schemas and templates for operationalizing the IATI standard regarding project location data 
 
 [Location types / Investment Types / Asset Types List as a mark down table](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/Location_Types_List_Proposal_01.md)
@@ -63,6 +68,7 @@ Once it becomes part of the IATI standard, it should use its respective [version
 [JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)
 
 To the above schemes, we still have to add the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
+
 
    
 # Administrative Boundaries
