@@ -1,86 +1,86 @@
 The **Project Location Data Model** to be standardized is a combination of:
-- [location-specific](#current-draft-of-location-level-attributes-for-the-standard),
-- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and
-- geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)
+- [location-specific](#current-draft-of-location-level-attributes-for-the-standard),  
+- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and  
+- geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)  
 that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
 
 
-# Current Draft of Location-level Attributes for the Standard 
-(as per Excel Template and JSON Scheme below): 
+# Current Draft of Location-level Attributes for the Standard  
+(as per Excel Template and JSON Scheme below):  
 
-- **Field ID** 
-- **Template Version** - this could also be part of the project-level attributes below
-- **Donor Project-No.** - this is also be part of the project-level attributes below
-- **Abbreviation of project name (project acronym)** -- this should rather be part of the project-level attributes below
-- **Data Provider (Institution Name)** ? - this could also be part of the project-level attributes below
-- **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below
-- **Date of data collection or latest update** ?
-- **Related Community / Village / Neighborhood** ?
-- **Location name** ?
-- **Location Activity Status** ?
-- **Planned or actual start date of activity at the location** ? 
-- **Planned or actual end date of activity at the location** ?
-- **Activity Description** ?
-- **Location Type Theme** ?
-- **Location Type Name**
-- **Geographic Exactness**
-- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
+- **Field ID**  
+- **Template Version** - this could also be part of the project-level attributes below  
+- **Donor Project-No.** - this is also be part of the project-level attributes below  
+- **Abbreviation of project name (project acronym)** -- this should rather be part of the project-level attributes below  
+- **Data Provider (Institution Name)** ? - this could also be part of the project-level attributes below  
+- **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below  
+- **Date of data collection or latest update** ?  
+- **Related Community / Village / Neighborhood** ?  
+- **Location name** ?  
+- **Location Activity Status** ?  
+- **Planned or actual start date of activity at the location** ?   
+- **Planned or actual end date of activity at the location** ?  
+- **Activity Description** ?  
+- **Location Type Theme** ?  
+- **Location Type Name**  
+- **Geographic Exactness**  
+- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)  
 
   
 
-# Current Draft of Project-level Attributes for the Standard
-(as per JSON Scheme below):
+# Current Draft of Project-level Attributes for the Standard  
+(as per JSON Scheme below):  
 
-- **Donor Project-No.** 
-- **Project Title (which language(s)?)**
-- **Abbreviation of project name (project acronym)** ?
-- **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector][https://iatistandard.org/en/iati-standard/203/codelists/sector/)
+- **Donor Project-No.**  
+- **Project Title (which language(s)?)**  
+- **Abbreviation of project name (project acronym)** ?  
+- **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector][https://iatistandard.org/en/iati-standard/203/codelists/sector/)  
 - **Country / Region / Supra-National Institution:** IATI code list OR ISO Code list? In IATI, there are no supranational institutions and no regions
-- **Project Status:** existing list of IATI categories in [activity type codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)? 
-- **Financing Instrument / Type:** [IATI codelist finance type](https://iatistandard.org/en/iati-standard/203/codelists/financetype/)?
+- **Project Status:** existing list of IATI categories in [activity type codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)?  
+- **Financing Instrument / Type:** [IATI codelist finance type](https://iatistandard.org/en/iati-standard/203/codelists/financetype/)?  
 - **Donor / Client** (of the project, upstream): [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? 
-   -> non longer maintained. Alternative?
+   -> non longer maintained. Alternative?  
 - **Project Executing / Implementing Agency(ies)** (of the project, downstream):
-  [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? -> non longer maintained. Alternative?
-- **ESG category of the project?**  Vocabulary?
+  [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? -> non longer maintained. Alternative?  
+- **ESG category of the project?**  Vocabulary?  
 - **Project team internally responsible for the data** (quality assurance): internal logic    
 
-We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:
-- [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value.
-- [Geographic Location Reach](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationreach/): this distinction is mostly relevant for immaterial location types which already incorporated it. TBD
-- [Geographical Precision](https://iatistandard.org/en/iati-standard/203/codelists/geographicalprecision/): these categories contain overlaps with other categories and its most important elements are already covered by the new proposed categories of exactness together with the location types schema.
+We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:  
+- [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value.  
+- [Geographic Location Reach](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationreach/): this distinction is mostly relevant for immaterial location types which already incorporated it. TBD  
+- [Geographical Precision](https://iatistandard.org/en/iati-standard/203/codelists/geographicalprecision/): these categories contain overlaps with other categories and its most important elements are already covered by the new proposed categories of exactness together with the location types schema.  
 
 
 
 # Data Schemas and templates for operationalizing the IATI standard regarding project location data 
 
-[Location types / Investment Types / Asset Types List as a mark down table](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/Location_Types_List_Proposal_01.md)
-This list proposes changes to the following IATI codelist: [IATI location type codelist](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)  
+[Location types / Investment Types / Asset Types List as a mark down table](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/Location_Types_List_Proposal_01.md)  
+This list proposes changes to the following IATI codelist: [IATI location type codelist](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)   
 
-[Location types / Investment Types / Asset Types List as an Excel Sheet](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/Location_Types_List_Proposal_02.xlsx)
-This list proposes changes to the following IATI codelist: [IATI location type codelist](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)  
+[Location types / Investment Types / Asset Types List as an Excel Sheet](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/Location_Types_List_Proposal_02.xlsx)  
+This list proposes changes to the following IATI codelist: [IATI location type codelist](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)   
 
-[Complete Excel Template for collecting location-specific data - English version](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/IATI_Project_Location_Data_Template_EN_V03.xlsx)
-In addition to the above-mentioned changes to the IATI location type list, this template uses the [IATI activity status codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/) and proposes changes to the following IATI codelists: [activity date type](https://iatistandard.org/en/iati-standard/203/codelists/activitydatetype/) and [geographic exactness](https://iatistandard.org/en/iati-standard/203/codelists/geographicexactness/) 
-Once it becomes part of the IATI standard, it should use its respective [version](https://iatistandard.org/en/iati-standard/203/codelists/version/) 
+[Complete Excel Template for collecting location-specific data - English version](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/assets/excels/IATI_Project_Location_Data_Template_EN_V03.xlsx)  
+In addition to the above-mentioned changes to the IATI location type list, this template uses the [IATI activity status codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/) and proposes changes to the following IATI codelists: [activity date type](https://iatistandard.org/en/iati-standard/203/codelists/activitydatetype/) and [geographic exactness](https://iatistandard.org/en/iati-standard/203/codelists/geographicexactness/)   
+Once it becomes part of the IATI standard, it should use its respective [version](https://iatistandard.org/en/iati-standard/203/codelists/version/)   
 
-[JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)
+[JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)  
 
-To the above schemes, we still have to add the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
+To the above schemes, we still have to add the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)  
 
 
    
-# Administrative Boundaries
+# Administrative Boundaries  
 
-**Requirements for Administrative (Unit) Boundaries**
+**Requirements for Administrative (Unit) Boundaries**  
 
-Administrative boundaries are crucial for analysis and visualization. However, these boundaries are subject to frequent changes due to modifications at various levels, such as the merging of districts or the division of municipalities. Maintaining such a dataset internally is impractical for KFW. Therefore, it is essential to identify a reliable existing dataset that meets all analytical and visualization needs while accurately reflecting political boundaries.
-In global datasets, administrative levels are typically categorized from level 0 to level 5. Level 0 represents the country level, while levels 1 through 5 correspond to progressively lower administrative divisions (e.g., states, districts, municipalities, regions, etc.). This standardized nomenclature helps avoid discrepancies in naming conventions across countries. For mapping and analysis purposes, KFW requires data up to at least the third administrative level.
-Given the political sensitivities surrounding boundaries in certain countries, the dataset must allow for flexible representation depending on the audience. For instance, it should enable users to depict Western Sahara as a separate entity or combine it with Morocco, as needed.
+Administrative boundaries are crucial for analysis and visualization. However, these boundaries are subject to frequent changes due to modifications at various levels, such as the merging of districts or the division of municipalities. Maintaining such a dataset internally is impractical for KFW. Therefore, it is essential to identify a reliable existing dataset that meets all analytical and visualization needs while accurately reflecting political boundaries.  
+In global datasets, administrative levels are typically categorized from level 0 to level 5. Level 0 represents the country level, while levels 1 through 5 correspond to progressively lower administrative divisions (e.g., states, districts, municipalities, regions, etc.). This standardized nomenclature helps avoid discrepancies in naming conventions across countries. For mapping and analysis purposes, KFW requires data up to at least the third administrative level.  
+Given the political sensitivities surrounding boundaries in certain countries, the dataset must allow for flexible representation depending on the audience. For instance, it should enable users to depict Western Sahara as a separate entity or combine it with Morocco, as needed.  
 ________________________________________
 
-**Available Administrative Boundaries Datasets**
+**Available Administrative Boundaries Datasets**  
 
 Based on the defined requirements and the strengths and weaknesses of the various data sources, HDX - OCHA Global Subnational Admin Boundaries emerges as the most suitable option. FieldMaps.io remains a very strong alternative.
 
