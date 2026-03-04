@@ -1,8 +1,8 @@
 The **Project Location Data Model** to be standardized is a combination of:
 - [location-specific](#current-draft-of-location-level-attributes-for-the-standard), 
 - [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and 
-- [geospatial](#geospatial-attributes)
-attributes that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
+- geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)
+that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
 # Current Draft of Location-level Attributes for the Standard 
 (as per Excel Template and JSON Scheme below): 
@@ -61,7 +61,7 @@ Once it becomes part of the IATI standard, it should use its respective [version
 
 [JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)
 
-To the above schemes, we still have to add project-specific attributes (see chapter above as well as the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
+To the above schemes, we still have to add the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
 
    
 # Administrative Boundaries
