@@ -14,7 +14,7 @@
 - **Location Type Theme** ?
 - **Location Type Name**
 - **Geographic Exactness**
-- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) respository](#administrative-boundaries)(see below) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA) 
+- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA) 
 
 # Current Draft of Project-level Attributes for the Standard:
 - **Donor Project-No.** 
