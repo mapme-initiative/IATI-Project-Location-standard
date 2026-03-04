@@ -1,3 +1,5 @@
+The **Project Location Data Model** to be standardized is a combination of location-specific, project-specific and geospatial attributes that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/) 
+
 # Current Draft of Location-level Attributes for the Standard 
 (as per Excel Template and JSON Scheme below): 
 - **Field ID** 
@@ -16,7 +18,8 @@
 - **Location Type Theme** ?
 - **Location Type Name**
 - **Geographic Exactness**
-- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA) 
+- **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
+  
 
 # Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):
@@ -55,6 +58,7 @@ Once it becomes part of the IATI standard, it should use its respective [version
 [JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)
 
 To the above schemes, we still have to add project-specific attributes (see chapter above as well as the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
+
    
 # Administrative Boundaries
 
