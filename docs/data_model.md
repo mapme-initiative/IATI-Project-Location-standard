@@ -2,6 +2,8 @@
 (as per Excel Template and JSON Scheme below): 
 - **Field ID** 
 - **Template Version** - this could also be part of the project-level attributes below
+- **Donor Project-No.** - this is also be part of the project-level attributes below
+- **Abbreviation of project name (project acronym)** -- this should rather be part of the project-level attributes below
 - **Data Provider (Institution Name)** ? - this could also be part of the project-level attributes below
 - **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below
 - **Date of data collection or latest update** ?
