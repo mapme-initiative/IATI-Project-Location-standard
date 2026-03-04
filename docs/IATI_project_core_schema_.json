@@ -1,73 +1,68 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "project_core_schema_merged.json",
+    "$id": "project_core_schema_iati.json",
     "description": "This schema defines the structure of the IATI project location standard, enriched with the full Location Types List Proposal metadata. It is used to validate the project location data provided by the project counterparts.",
-    "properties": {
-        "column_1": {
+    "properties": {   
+        "f_id": {
             "attribute_name": "Field ID",
             "attribute_code": "f_id", 
-            "explanation": "For new locations, this column will be empty. For updates,  KfW will provide you with the list of f_id numbers of this file to ensure that the updated field ids match with the former ones.",
-            "type": "string"
+            "description": "For new locations, this column will be empty. For updates, your counterpart will provide you with the list of f_id numbers of this file to ensure that the updated field ids match with the former ones.",
+            "type": "number"
         },
-        "column_2": {
+        "scheme_version": {
             "attribute_name": "Template Version",
             "attribute_code": "scheme_version",
             "type": "string",
             "enum": [
-                "3.0"
+                "0.1"
             ]
         },
-        "column_3": {
-            "attribute_name": "Donor Proejct No.",
+        "donor_project_no": {
+            "attribute_name": "Donor Project No.",
             "attribute_code": "donor_project_no",
-            "explanation": "Every project location must be assigned to its respective BMZ project number.",
+            "description": "Every project location must be assigned to its respective (donor) project number.",
             "type": "string"
         },
-        "column_4": {
+        "project_title": {
+            "attribute_name": "Project Title,
+            "attribute_code": "project_title", 
+            "description": "Enter the name/title of the project to be visible on all locations in your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
+            "type": "string"
+        },
+        "project_acronym": {
             "attribute_name": "Abbreviation of project name (project acronym)",
             "attribute_code": "project_acronym",
-            "explanation": "Enter the acronym used for the name/title of the project (e.g. HREII) to be visible on your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated KfW Project-No.",
+            "description": "Enter the acronym used for the name/title of the project (e.g. HREII) to be visible on your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
             "type": "string"
         },
-        "column_5": {
-            "attribute_name": "Data Provider (Institution Name)",
-            "attribute_code": "data_provider",
-            "explanation": "Legal Entity who owns the data provided here (= legal authorship).",
+         "project_title": {
+            "attribute_name": "Project Title,
+            "attribute_code": "project_title", 
+            "description": "Enter the name/title of the project to be visible on all locations in your map. If the project has multiple phases, please add the number of the phase belonging to the before-stated (donor) project number",
             "type": "string"
         },
-        "column_6": {
-            "attribute_name": "Publishing restrictions due to security reasons",
-            "attribute_code": "publishing_restrictions",
-            "explanation": "Indicates if the exact location is collected in fragile areas (e.g. of severe civil conflict or war) and should therefore be omitted from publicly available reports.",
-            "enum": [
-                "yes",
-                "no"
-            ],
+        "dac5_subsector_code": {
+            "attribute_name": "IATI Sector Vocabulary / DAC5 Subsector Code",
+            "attribute_code": "DAC5_subsector_code",
+            "description": "Main DAC 5 Subsector (CRS-Code) to which the project contributes",
+            "type": "number"
+        },
+        "dac5_subsector_name": {
+            "attribute_name": "IATI Sector Vocabulary / DAC5 Subsector Name",
+            "attribute_code": "DAC5_subsector_name",
+            "description": "Name of the main DAC 5 Subsector to which the project contributes",
             "type": "string"
         },
-        "column_7": {
-            "attribute_name": "Date of data collection or latest update", 
-            "attribute_code": "date_of_data_collection",
-            "explanation": "Date of data collection or latest update (if date of data collection is unknown). In case only the year is available please choose the 1st of january e.g. 2022-01-01.",
-            "format": "date",
+        "country_code": {
+            "attribute_name": "Country / Region / Supra-National Institution",
+            "attribute_code": "country_code",
+            "description": "Country / Region / Supra-National Institution to which the project is assigned",
             "type": "string"
         },
-        "column_8": {
-            "attribute_name": "Related Community / Village / Neighborhood",
-            "attribute_code": "related_community",
-            "explanation": "Enter a community, village, hamlet or neighbourhood name that relates to this location, this can serve for manually add smaller administrative unit names that are not in global databases.",
-            "type": "string"
-        },
-        "column_9": {
-            "attribute_name": "Location name", 
-            "attribute_code": "location_name",
-            "explanation": "Unique name of the project site and its (main) activity incl local MIS-/GIS-ID, if availabe. This will be used as reference for line and polygon data.",
-            "type": "string"
-        },
-        "column_10": {
-            "attribute_name": "Location Activity Status", 
-            "attribute_code": "location_activity_status",
-            "explanation": "The location activity status according to the IATI standard. If you are unaware of the current status please choose 'NA'.",
+        "project_status": {
+            "attribute_name": "Project Status", 
+            "attribute_code": "project_status",
+            "description": "The project status according to the IATI standard. If you are unaware of the current status please choose 'NA'.",
             "enum": [
                 "NA",
                 "Pipeline/identification",
@@ -80,30 +75,116 @@
             ],
             "type": "string"
         },
-        "column_11": {
+        "finance_type": {
+            "attribute_name": "Financing Instrument / Type",
+            "attribute_code": "finance_type",
+            "description": "Financing Instrument / Type of the Project",
+            "enum": [see IATI list finance type
+            ]
+            "type": "string"
+        },
+        "donor_id": {
+            "attribute_name": "Donor / Client",
+            "attribute_code": "donor_id",
+            "description": "ID / Name of the project's donor / client",
+            "enum": [see IATI codelist? or name? 
+            ]
+            "type": "string"
+        },
+        "pea_name": {
+            "attribute_name": "Project Executing / Implementing Agency",
+            "attribute_code": "pea_name",
+            "description": "Name of the Project Executing / Implementing Agency",
+            "type": "string"
+        },
+        "esg_category": {
+            "attribute_name": "ESG Category of the Project",
+            "attribute_code": "esg_category",
+            "description": "ESG Category of the Project",
+            "enum": [
+                "A+", 
+                "A", 
+                "B", 
+                "B+", 
+                "C"
+            ]
+            "type": "string"
+        },
+        "team_name": {
+            "attribute_name": "Name of Project Team",
+            "attribute_code": "team_name",
+            "description": "Name of the reponsible Project Team",
+            "type": "string"
+        },
+        "publishing_restrictions": {
+            "attribute_name": "Publishing restrictions due to security reasons",
+            "attribute_code": "publishing_restrictions",
+            "description": "Indicates if the exact location is collected in fragile areas (e.g. of severe civil conflict or war) and should therefore be omitted from publicly available reports.",
+            "enum": [
+                "yes",
+                "no"
+            ],
+            "type": "string"
+        },
+        "date_of_data_collection": {
+            "attribute_name": "Date of data collection or latest update", 
+            "attribute_code": "date_of_data_collection",
+            "description": "Date of data collection or latest update (if date of data collection is unknown). In case only the year is available please choose the 1st of january e.g. 2022-01-01.",
+            "format": "date",
+            "type": "string"
+        },
+        "related_community": {
+            "attribute_name": "Related Community / Village / Neighborhood",
+            "attribute_code": "related_community",
+            "description": "Enter a community, village, hamlet or neighbourhood name that relates to this location, this can serve for manually add smaller administrative unit names that are not in global databases.",
+            "type": "string"
+        },
+        "location_name": {
+            "attribute_name": "Location name", 
+            "attribute_code": "location_name",
+            "description": "Unique name of the project site and its (main) activity incl local MIS-/GIS-ID, if availabe. This will be used as reference for line and polygon data.",
+            "type": "string"
+        },
+        "location_activity_status": {
+            "attribute_name": "Location Activity Status", 
+            "attribute_code": "location_activity_status",
+            "description": "The location activity status according to the IATI standard. If you are unaware of the current status please choose 'NA'.",
+            "enum": [
+                "NA",
+                "Pipeline/identification",
+                "Implementation",
+                "Finalisation",
+                "Closed",
+                "Cancelled",
+                "Suspended",
+                "Other"
+            ],
+            "type": "string"
+        },
+        "activity_start_date": {
             "attribute_name": "Planned or actual start date of activity at the location",
             "attribute_code": "activity_start_date",
-            "explanation": "Aprox. planned or actual start date of implementation of activities on the ground. This can be e.g. the date when construction work is planned to begin. For no information enter 2100-01-01.",
+            "description": "Aprox. planned or actual start date of implementation of activities on the ground. This can be e.g. the date when construction work is planned to begin. For no information enter 2100-01-01.",
             "format": "date",
             "type": "string"
         },
-        "column_12": {
+        "activity_end_date": {
             "attribute_name": "Planned or acutal end date of activity at the location",
             "attribute_code": "activity_end_date",
-            "explanation": "Aprox. planned or actual end date of activities on the ground. This can be e.g. the date when the project is planned to cease implementation activities. For no information enter 2100-01-01.",
+            "description": "Aprox. planned or actual end date of activities on the ground. This can be e.g. the date when the project is planned to cease implementation activities. For no information enter 2100-01-01.",
             "format": "date",
             "type": "string"
         },
-        "column_13": {
+        "activity_description": {
             "attribute_name": "Activity Description",
             "attribute_code": "activity_description",
-            "explanation": "A short description of the main project activity in this location, e.g., hydropower plant construction or construction of small irrigation systems.",
+            "description": "A short description of the main project activity in this location, e.g., hydropower plant construction or construction of small irrigation systems.",
             "type": "string"
         },
-        "column_14": {
+        "location_type_theme": {
             "attribute_name": "Location Type Theme", 
             "attribute_code": "location_type_theme",
-            "explanation": "Sectoral / cross-sectoral location type preselection field, see table sheets 'Location Types' & KC Themes. If there is no fit,  select '_Generic/Crosssect.' here and then 'other physical/immaterial' in the next column.",
+            "description": "Sectoral / cross-sectoral preselection field for choosing the most suitable location type name. If there is no fit,  select '_Generic/Cross_Sectoral' and then 'other physical/immaterial' in the next column.",
             "type": "string",
             "enum": [
                 "_Generic / Cross_Sectoral",
@@ -124,10 +205,10 @@
                 "Water_Management"
             ]
         },
-        "column_15": { 
+        "location_type_name": { 
             "attribute_name": "Location Type Name", 
             "attribute_code": "location_type_name",
-            "explanation": "After selecting the KC Theme, choose the most appropriate location type, see table sheet 'Location Types'. If there is no fit please select 'other phys./imm.'",
+            "description": "After selecting the location type theme, choose the most appropriate location type, see table sheet 'Location Types'. If there is no fit please select 'other phys./imm.'",
             "type": "string",
             "enum": [
                 "building(s)",
@@ -160,8 +241,8 @@
                 "saving groups / VSLA / SACCOs support",
                 "sensitization / awareness raising (campaign)",
                 "supply chains (support) area",
-                "voucher(s) (system) distributrion area",
-                "slaugtherhouse",
+                "voucher(s) (system) distribution area",
+                "slaughterhouse",
                 "mine(s)",
                 "workshop(s)",
                 "sustainably farmed area(s)",
@@ -306,7 +387,7 @@
                 "indigenous peoples & local communities (IP&LC)",
                 "no-take zone",
                 "visitor center / education facility",
-                "regeneration / restoration / rehabilition area",
+                "regeneration / restoration / rehabilitation area",
                 "watershed / catchment conservation area",
                 "fire management area",
                 "key biodiversity area (KBA) with financed management",
@@ -356,10 +437,10 @@
                 "watercourse"
             ]
         },
-        "column_16": {
+        "geographic_exactness": {
             "attribute_name": "Geographic Exactness", 
             "attribute_code": "geographic_exactness",
-            "explanation": "Use 'exact' if the exact coordinates are known + no security restrictions apply. Otherwise, use 'approximate (security)' or 'approx. (yet unknown)'. If the target area is an admin unit, use 'approx. (admin unit).'.",
+            "description": "Use 'exact' if the exact coordinates are known + no security restrictions apply. Otherwise, use 'approximate (security)' or 'approx. (yet unknown)'. If the target area is an admin unit, use 'approx. (admin unit).'.",
             "enum": [
                 "exact",
                 "approximate (yet unknown)",
@@ -368,18 +449,22 @@
             ],
             "type": "string"
         },
-        "column_17": {
+        "latitude": {
             "attribute_name": "Latitude", 
             "attribute_code": "latitude", 
-            "explanation": "Enter the Latitude (at least 5 digits!) measured with a GPS device (or centroid or admin unit polygon for approximate locations). Use WGS 84 as the Coordinate Reference System (EPSG:4326).",
-            "type": "string"
+            "description": "Enter the Latitude (at least 5 digits!) measured with a GPS device (or centroid or admin unit polygon for approximate locations). Use WGS 84 as the Coordinate Reference System (EPSG:4326).",
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
         }, 
-        "column_18": {
+        "longitude": {
             "attribute_name": "Longitude", 
             "attribute_code": "longitude", 
-            "explanation": "Enter the Longitude (at least 5 digits!) measured with a GPS device (or centroid or admin unit polygon for approximate locations). Use WGS 84 as the Coordinate Reference System (EPSG:4326).",
-            "type": "string"
-        },
+            "description": "Enter the Longitude (at least 5 digits!) measured with a GPS device (or centroid or admin unit polygon for approximate locations). Use WGS 84 as the Coordinate Reference System (EPSG:4326).",
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+        }
     },
     "required": [
         "f_id",
@@ -395,7 +480,6 @@
         "activity_start_date",
         "activity_end_date",
         "activity_description",
-        "location_type_theme",
         "location_type_name",
         "geographic_exactness"
     ],
@@ -432,8 +516,8 @@
         { "theme": "_Generic / Cross_Sectoral", "name": "saving groups / VSLA / SACCOs support", "code": "VSLA", "class": "immaterial", "geodata_type": "polygon", "category": "A", "description": "target area, usually admin unit, of interventions or mechanisms that facilitate community-based financial cooperation and resource pooling such as village-based savings and loans associations (VSLA) or savings and credit cooperative organizations (SACCOs)", "iati_comparison": "NEW" },
         { "theme": "_Generic / Cross_Sectoral", "name": "sensitization / awareness raising (campaign)", "code": "SENSA", "class": "immaterial", "geodata_type": "polygon", "category": "A", "description": "target area, usually admin unit, of campaigns or other communication activities intended to inform, mobilize or educate targeted audiences on specific topics", "iati_comparison": "NEW" },
         { "theme": "_Generic / Cross_Sectoral", "name": "supply chains (support) area", "code": "SUPCH", "class": "immaterial", "geodata_type": "polygon", "category": "A", "description": "target area, usually admin unit, of systems or services to increase the value generated locally or to make supply chains more efficient", "iati_comparison": "NEW" },
-        { "theme": "_Generic / Cross_Sectoral", "name": "voucher(s) (system) distributrion area", "code": "VOUCH", "class": "immaterial", "geodata_type": "polygon", "category": "A", "description": "target area, usually admin unit, of interventions for allocating entitlements or credits to beneficiaries through organized schemes", "iati_comparison": "NEW" },
-        { "theme": "_Generic / Cross_Sectoral", "name": "slaugtherhouse", "code": "SLAU", "class": "physical", "geodata_type": "point", "category": "S", "description": "facility where animals are killed and processed for food production", "iati_comparison": "NEW" },
+        { "theme": "_Generic / Cross_Sectoral", "name": "voucher(s) (system) distribution area", "code": "VOUCH", "class": "immaterial", "geodata_type": "polygon", "category": "A", "description": "target area, usually admin unit, of interventions for allocating entitlements or credits to beneficiaries through organized schemes", "iati_comparison": "NEW" },
+        { "theme": "_Generic / Cross_Sectoral", "name": "slaughterhouse", "code": "SLAU", "class": "physical", "geodata_type": "point", "category": "S", "description": "facility where animals are killed and processed for food production", "iati_comparison": "NEW" },
         { "theme": "_Generic / Cross_Sectoral", "name": "mine(s)", "code": "MN", "class": "physical", "geodata_type": "point", "category": "S", "description": "a site where mineral ores are extracted from the ground by excavating surface pits and subterranean passages", "iati_comparison": "OLD" },
         { "theme": "_Generic / Cross_Sectoral", "name": "workshop(s)", "code": "WRKS", "class": "physical", "geodata_type": "point", "category": "S", "description": "a building dedicated to hands-on activities, technical work, or small-scale manufacturing", "iati_comparison": "NEW" },
         { "theme": "Agriculture / Rural_Development", "name": "sustainably farmed area(s)", "code": "SFRMA", "class": "physical", "geodata_type": "polygon", "category": "V", "description": "an non-irrigated farm area under ecologically sustainable cultivation", "iati_comparison": "NEW" },
@@ -579,7 +663,7 @@
         { "theme": "Biodiversity_Conservation", "name": "indigenous peoples & local communities (IP&LC)", "code": "IPALC", "class": "physical", "geodata_type": "polygon", "category": "L", "description": "areas managed or influenced by distinct and diverse indigenous groups and communities that maintain close ties to their territories and traditions, playing a crucial role in environmental management", "iati_comparison": "NEW" },
         { "theme": "Biodiversity_Conservation", "name": "no-take zone", "code": "NTZ", "class": "physical", "geodata_type": "polygon", "category": "H", "description": "a marine protected area (MPA) permanently set aside from direct human disturbance, where all methods of fishing and extraction of natural materials, dumping, dredging or construction activities are prohibited", "iati_comparison": "NEW" },
         { "theme": "Biodiversity_Conservation", "name": "visitor center / education facility", "code": "VISIT", "class": "physical", "geodata_type": "point", "category": "S", "description": "building(s) for learning, outreach, and engagement regarding natural environments", "iati_comparison": "NEW" },
-        { "theme": "Biodiversity_Conservation", "name": "regeneration / restoration / rehabilition area", "code": "REGEN", "class": "physical", "geodata_type": "polygon", "category": "V", "description": "land area dedicated to protecting, enhancing or restoring ecological health and functions of natural environments including forests", "iati_comparison": "NEW" },
+        { "theme": "Biodiversity_Conservation", "name": "regeneration / restoration / rehabilitation area", "code": "REGEN", "class": "physical", "geodata_type": "polygon", "category": "V", "description": "land area dedicated to protecting, enhancing or restoring ecological health and functions of natural environments including forests", "iati_comparison": "NEW" },
         { "theme": "Biodiversity_Conservation", "name": "watershed / catchment conservation area", "code": "WTRS", "class": "physical", "geodata_type": "polygon", "category": "H", "description": "land area that safeguards the natural flow and quality of freshwater resources", "iati_comparison": "NEW" },
         { "theme": "Biodiversity_Conservation", "name": "fire management area", "code": "FIMA", "class": "physical", "geodata_type": "polygon", "category": "V", "description": "vegetation area where fire management measures are being carried out", "iati_comparison": "NEW" },
         { "theme": "Biodiversity_Conservation", "name": "key biodiversity area (KBA) with financed management", "code": "KBA", "class": "physical", "geodata_type": "polygon", "category": "V", "description": "areas that contribute significantly to the global persistence of biodiversity in terrestrial, freshwater and marine environments with secured funding for management", "iati_comparison": "NEW" },
