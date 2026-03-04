@@ -51,11 +51,11 @@ Once it becomes part of the IATI standard, it should use its respective [version
 
 [JSON Scheme of the location-specific part of the data model containing all elements of the above Excel template](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/IATI_project_core_schema_.json)
 
-To all the above schemes, we still have to add project-specific attributes (see chapter above) as well as the **geographic vocabulary/ies** = administrative boundaries repository/ies (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
+To all the above schemes, we still have to add project-specific attributes (see chapter above as well as the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)
    
-# Administrative (Unit) Boundaries
+# Administrative Boundaries
 
-**Requirements for Administrative Boundaries**
+**Requirements for Administrative (Unit) Boundaries**
 
 Administrative boundaries are crucial for analysis and visualization. However, these boundaries are subject to frequent changes due to modifications at various levels, such as the merging of districts or the division of municipalities. Maintaining such a dataset internally is impractical for KFW. Therefore, it is essential to identify a reliable existing dataset that meets all analytical and visualization needs while accurately reflecting political boundaries.
 In global datasets, administrative levels are typically categorized from level 0 to level 5. Level 0 represents the country level, while levels 1 through 5 correspond to progressively lower administrative divisions (e.g., states, districts, municipalities, regions, etc.). This standardized nomenclature helps avoid discrepancies in naming conventions across countries. For mapping and analysis purposes, KFW requires data up to at least the third administrative level.
