@@ -4,6 +4,7 @@ The **Project Location Data Model** to be standardized is a combination of:
 - geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)
 that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
+
 # Current Draft of Location-level Attributes for the Standard 
 (as per Excel Template and JSON Scheme below): 
 - **Field ID** 
