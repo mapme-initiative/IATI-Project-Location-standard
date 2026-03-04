@@ -6,7 +6,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 
 
 
-# Current Draft of Location-level Attributes for the Standard  
+# Current Draft of Location-level Attributes for the Standard
 (as per Excel Template and JSON Scheme below):  
 
 - **Field ID**  
@@ -29,7 +29,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 
   
 
-# Current Draft of Project-level Attributes for the Standard  
+# Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):  
 
 - **Donor Project-No.**  
