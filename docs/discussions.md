@@ -30,4 +30,3 @@ Choose a topic below to join the discussion directly on GitHub:
 </div>
 
 <p style="font-size:0.8rem; color:#888;">Discussions are hosted on GitHub. You need a free GitHub account to post — reading is open to everyone.</p>
----
