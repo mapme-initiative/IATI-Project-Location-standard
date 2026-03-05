@@ -3,7 +3,7 @@
 Welcome to the MAPME Community of Practice discussion boards. Here you can share feedback, ask questions, and contribute ideas to help shape and improve the IATI Project Location Standard.
 
 Choose a topic below to join the discussion directly on GitHub:
----
+
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin:1.5rem 0;">
 
 <a href="https://github.com/mapme-initiative/IATI-Project-Location-Standard/discussions/17" target="_blank" rel="noopener" style="display:flex; flex-direction:column; gap:0.6rem; padding:1.2rem; border:1px solid #ccc; border-radius:6px; text-decoration:none; color:inherit;">
