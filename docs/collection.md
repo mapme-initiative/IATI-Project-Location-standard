@@ -52,7 +52,7 @@ For the collection of point-locations, the use of **.GeoJSON** is optional but r
 
 We highlight two common cases for generating the required data: 
 
- 1. **Desktop-production**: For manual data collection, we recommend using the [excels Ordner](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to store all attributes and merging this information with spatial information (feature geometries) in a GIS software. Since the Excel templates are pre-configured, it is easier to provide data that is compliant with the data-model and pass the validation check (not yet implemented) as a way to ensure data quality. 
+ 1. **Desktop-production**: For manual data collection, we recommend using the [Excel Templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to store all attributes and merging this information with spatial information (feature geometries) in a GIS software. Since the Excel templates are pre-configured, it is easier to provide data that is compliant with the data-model and pass the validation check (not yet implemented) as a way to ensure data quality. 
 
  2. **Database-extraction**: If location information is available in a geospatial database, it is possible to extract and transform the data into field-mappings that also match our requirements. In these cases, the data-model can be provided as a [JSON schema](./annex2.md). This supports batch conversions as a starting point; any missing information can then be manually added.
 
