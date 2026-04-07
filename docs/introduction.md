@@ -14,7 +14,7 @@ In our data model, a location is always defined as the combination of a specific
 
 The IATI project location model is a structured data model, developed by [MAPME Community of Practice members](https://www.mapme-initiative.org/), to collect location-specific information about projects supported by international development cooperation. The model is in use and continues to be developed by them, together with their peers and partners. 
 
-The model, in Excel format, is currently available for download in English and French, see also [Excel Templates](./annex1.md). The model can be used in combination with a Geojson file. 
+The model, in Excel format, is currently available for download in English and French, see also [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels). The model can be used in combination with a Geojson file. 
 
 Data related to specific project locations should be collected with respect to the outlined requirements. Please see FAQ for more information about the International Aid Transparency Initiative (IATI) standards and enhancements particular to [MAPME Community of Practice members'](https://www.mapme-initiative.org/) operational needs.
 
