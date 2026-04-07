@@ -45,14 +45,14 @@ Point-loctions should be collected in **.XLSX** and **.GeoJSON** formats.
 
 ### Using Excel for point-locations
  
-The **.XLSX** format is best suited, if your institution does not know how to handle geospatial data and has no former experience with Geographic Information System (GIS) software. In this case you can use the most recent version of our [Excel templates](./excels) to collect all relevant location-specific information.
+The **.XLSX** format is best suited, if your institution does not know how to handle geospatial data and has no former experience with Geographic Information System (GIS) software. In this case you can use the most recent version of our [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to collect all relevant location-specific information.
 
 ## Collection of point-, line-, and polygon-locations using GIS software
 For the collection of point-locations, the use of **.GeoJSON** is optional but recommended for its reliability and flexibility. For the collection of line- or polygon-locations, only **.GeoJSON** format is accepted.
 
 We highlight two common cases for generating the required data: 
 
- 1. **Desktop-production**: For manual data collection, we recommend using the [Excel Templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to store all attributes and merging this information with spatial information (feature geometries) in a GIS software. Since the Excel templates are pre-configured, it is easier to provide data that is compliant with the data-model and pass the validation check (not yet implemented) as a way to ensure data quality. 
+ 1. **Desktop-production**: For manual data collection, we recommend using the [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to store all attributes and merging this information with spatial information (feature geometries) in a GIS software. Since the Excel templates are pre-configured, it is easier to provide data that is compliant with the data-model and pass the validation check (not yet implemented) as a way to ensure data quality. 
 
  2. **Database-extraction**: If location information is available in a geospatial database, it is possible to extract and transform the data into field-mappings that also match our requirements. In these cases, the data-model can be provided as a [JSON schema](./annex2.md). This supports batch conversions as a starting point; any missing information can then be manually added.
 
