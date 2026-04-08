@@ -33,8 +33,8 @@ To be discussed on 21th April:
 - **Standard Version**
 - DELETED: ~~**Data Provider (Institution Name)**~~  
 - **Donor Project-No.**  
-- **Project Title (which language(s)?)**
-- **Abbreviation of project name (project acronym)**
+- **Project Name (which language(s)?)**
+- **Abbreviation of Project Name (Project Acronym)**
 
 To be discussed on 21th April:
 
