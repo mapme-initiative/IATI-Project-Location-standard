@@ -9,28 +9,32 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 # Current Draft of Location-level Attributes for the Standard
 
 - **Field ID** (should we define the form or not? e.g. x digits or donor project no plus x digits?)  
-- ~**Data Provider (Institution Name)**~  
-- **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below  
-- **Date of data collection or latest update** ?  
-- **Related Community / Village / Neighborhood** ?  
-- **Location name** ?  
-- **Location Activity Status** ?  
+- **Publishing restrictions due to security reasons**  This is considered very important by all participants so far. 
+One general publishing rule could be only to publish  locations at Admin Unit 2 level (a participant is doing this) and additionally in certain regions / countries to decide for every location, if it should be published or not (a participant is doing this at country office level) – we propose to use both above restrictions – any other views?
+- **Date of data collection or latest update**
+- ~**Related Community / Village / Neighborhood**~
+- **Location name**:  It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or  province x)
+- **Location Activity Status**
+
+To be discussed on 21th April:
 - **Planned or actual start date of activity at the location** ?   
 - **Planned or actual end date of activity at the location** ?  
 - **Activity Description** ?  
 - **Location Type Theme** ?  
-- **Location Type Name**  
+- **Location Type Name** -> see markdown table below 
 - **Geographic Exactness**  
 - **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)  
 
   
-
 # Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):  
-- **Standard Version**  
+- **Standard Version**
+- ~**Data Provider (Institution Name)**~  
 - **Donor Project-No.**  
 - **Project Title (which language(s)?)**
-- **Abbreviation of project name (project acronym)**  
+- **Abbreviation of project name (project acronym)**
+
+To be discussed on 21th April:
 - **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector][https://iatistandard.org/en/iati-standard/203/codelists/sector/)  
 - **Country / Region / Supra-National Institution:** IATI code list OR ISO Code list? In IATI, there are no supranational institutions and no regions
 - **Project Status:** existing list of IATI categories in [activity type codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)?  
@@ -40,7 +44,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Project Executing / Implementing Agency(ies)** (of the project, downstream):
   [IATI codelist](https://iatistandard.org/en/iati-standard/203/codelists/organisationidentifier/)? -> non longer maintained. Alternative?  
 - **ESG category of the project?**  Vocabulary?  
-- **Project team internally responsible for the data** (quality assurance): internal logic    
+- ~**Project team internally responsible for the data** (quality assurance): internal logic~    
 
 We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:  
 - [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value.  
