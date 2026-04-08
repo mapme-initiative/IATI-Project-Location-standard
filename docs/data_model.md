@@ -12,11 +12,12 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Publishing restrictions due to security reasons**  This is considered very important by all participants so far. 
 One general publishing rule could be only to publish  locations at Admin Unit 2 level (a participant is doing this) and additionally in certain regions / countries to decide for every location, if it should be published or not (a participant is doing this at country office level) – we propose to use both above restrictions – any other views?
 - **Date of data collection or latest update**
-- ~**Related Community / Village / Neighborhood**~
+- ~~**Related Community / Village / Neighborhood**~~
 - **Location name**:  It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or  province x)
 - **Location Activity Status**
 
 To be discussed on 21th April:
+
 - **Planned or actual start date of activity at the location** ?   
 - **Planned or actual end date of activity at the location** ?  
 - **Activity Description** ?  
@@ -29,13 +30,14 @@ To be discussed on 21th April:
 # Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):  
 - **Standard Version**
-- ~**Data Provider (Institution Name)**~  
+- ~~**Data Provider (Institution Name)**~~  
 - **Donor Project-No.**  
 - **Project Title (which language(s)?)**
 - **Abbreviation of project name (project acronym)**
 
 To be discussed on 21th April:
-- **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector][https://iatistandard.org/en/iati-standard/203/codelists/sector/)  
+
+- **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector](https://iatistandard.org/en/iati-standard/203/codelists/sector/)  
 - **Country / Region / Supra-National Institution:** IATI code list OR ISO Code list? In IATI, there are no supranational institutions and no regions
 - **Project Status:** existing list of IATI categories in [activity type codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)?  
 - **Financing Instrument / Type:** [IATI codelist finance type](https://iatistandard.org/en/iati-standard/203/codelists/financetype/)?  
