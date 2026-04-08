@@ -6,13 +6,9 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 
 
 
-# Current Draft of Location-level Attributes for the Standard
-(as per Excel Template and JSON Scheme below):  
+# Current Draft of Location-level Attributes for the Standard <span style="color:blue">decisions in *blue*</span>.
 
-- **Field ID**  
-- **Template Version** - this could also be part of the project-level attributes below  
-- **Donor Project-No.** - this is also be part of the project-level attributes below  
-- **Abbreviation of project name (project acronym)** -- this should rather be part of the project-level attributes below  
+- **Field ID** (should we define the form or not? e.g. x digits or donor project no plus x digits?)  
 - **Data Provider (Institution Name)** ? - this could also be part of the project-level attributes below  
 - **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below  
 - **Date of data collection or latest update** ?  
@@ -31,10 +27,10 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 
 # Current Draft of Project-level Attributes for the Standard
 (as per JSON Scheme below):  
-
+- **Standard Version**  
 - **Donor Project-No.**  
-- **Project Title (which language(s)?)**  
-- **Abbreviation of project name (project acronym)** ?  
+- **Project Title (which language(s)?)**
+- **Abbreviation of project name (project acronym)**  
 - **IATI Sector Vocabulary No 1:** DAC5-Subsector Code (=CRS-Code) and DAC5-Subsector Title (IATI languages) [DAC5 Digit Sector][https://iatistandard.org/en/iati-standard/203/codelists/sector/)  
 - **Country / Region / Supra-National Institution:** IATI code list OR ISO Code list? In IATI, there are no supranational institutions and no regions
 - **Project Status:** existing list of IATI categories in [activity type codelist](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)?  
