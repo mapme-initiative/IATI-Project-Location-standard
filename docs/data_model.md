@@ -6,10 +6,10 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 
 
 
-# Current Draft of Location-level Attributes for the Standard <span style="color:blue">decisions in *blue*</span>.
+# Current Draft of Location-level Attributes for the Standard
 
 - **Field ID** (should we define the form or not? e.g. x digits or donor project no plus x digits?)  
-- **Data Provider (Institution Name)** ? - this could also be part of the project-level attributes below  
+- ~**Data Provider (Institution Name)**~  
 - **Publishing restrictions due to security reasons** ? - this could also be part of the project-level attributes below  
 - **Date of data collection or latest update** ?  
 - **Related Community / Village / Neighborhood** ?  
