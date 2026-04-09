@@ -22,7 +22,7 @@ To be discussed on 21th April:
 - **Planned or actual end date of activity at the location** ?  
 - **Activity Description** ?  
 - **Location Type Theme** ?  
-- **Location Type Name** -> see markdown table below 
+- **Location Type Name** ~ [GeoNames Feature Codes](https://www.geonames.org/export/codes.html) -> see markdown table below 
 - **Geographic Exactness**  
 - **Geospatial Attributes**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)  
 
