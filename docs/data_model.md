@@ -17,7 +17,7 @@ One general publishing rule could be only to publish  locations at Admin Unit 2 
 - DELETED: ~~**Related Community / Village / Neighborhood**~~
 - **Location name**:  It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or  province x). This would further specify/change the current IATI definition.
 - IN THE IATI-Standard: **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/) - Is this useful? 
-- **Location (Sub-)Activity Status OR Location Activity Description Status?**
+- **Location (Sub-)Activity Status OR Location (Activity Description) Status?**
 
 To be discussed on 21th April:
 
