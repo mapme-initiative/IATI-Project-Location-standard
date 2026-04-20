@@ -1,6 +1,6 @@
 The **Project Location Data Model** to be standardized is a combination of:  
 - [location-specific](#current-draft-of-location-level-attributes-for-the-standard),  
-- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) and  
+- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) = IATI-activity-specific and  
 - geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)  
 that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
