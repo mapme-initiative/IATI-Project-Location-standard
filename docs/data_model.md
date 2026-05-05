@@ -28,6 +28,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Last updated datetime** 
 - **Language Code** 
 
+---
 
 # Current Draft of Location-level Attributes for the Standard
 
@@ -65,7 +66,7 @@ We recommend not to use the following IATI standard elements for our proposed ne
 - [Geographic Location Reach](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationreach/): this distinction is mostly relevant for immaterial location types which already incorporated it. We however could also keep it and categorize our location types accordingly  
 - [Geographical Precision](https://iatistandard.org/en/iati-standard/203/codelists/geographicalprecision/): these categories contain overlaps with other categories and its most important elements are already covered by the new proposed categories of exactness together with the location types schema.  
 
-
+---
 
 # Data Schemas and templates for operationalizing the IATI standard regarding project location data 
 
@@ -83,7 +84,7 @@ Once it becomes part of the IATI standard, it should use its respective [version
 
 To the above schemes, we still have to add the **geographic vocabulary/ies** = [administrative (unit) boundaries](#administrative-boundaries) repository/ies below (ideally recommending only one) and potentially add it to the [IATI geographic vocabulary list](https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/)  
 
-
+---
    
 # Administrative Boundaries  
 
