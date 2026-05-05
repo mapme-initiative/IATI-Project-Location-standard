@@ -15,7 +15,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Project Title = [Activity Title](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**
 - **Project Description = [IATI Activity Description](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**: must be formulated in a way that external parties can understand it as well
 - **Project Status = [IATI-Activity Status](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)**
-- **Project Date = [IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**
+- **Project (Start and / or End) Date = [IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**
 - **Project Sector = IATI Sector Vocabulary No 1**: OECD DAC5-Subsector Code (= 5-digit CRS-Code) and DAC5-Subsector Name [DAC5 Digit Sector](https://iatistandard.org/en/iati-standard/203/codelists/sector/); See also: [Activity thematic focus](https://iatistandard.org/en/guidance/standard-guidance/activity-thematic-focus/)
 - **Project Recipient Country / Region**: [IATI code list for countries OR regions](https://iatistandard.org/en/iati-standard/203/codelists/sector/)
 - **Project Donor OR Client (of the project, upstream) = [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/)**
@@ -25,8 +25,8 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **Name of Project Executing / Implementing Agency(ies) (of the project, downstream)**: [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/) 
 
 ## c. Optional project-level data types highly recommended by the IATI secretariat and our initiative:
-- **Last updated datetime** 
-- **Language Code** 
+- **[Date of data collection or latest update](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**
+- **[Language Code](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**
 
 ---
 
@@ -37,25 +37,22 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **[Location Reach](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/)**: where the activity is carried out (= Code 1) OR the location of the intended beneficiaries / target groups (= Code 2)
 - **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact" OR three "approximate" categories (yet unknown, admin unit, security) -> details see below 
 - **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/)**: A description that qualifies the location, not the activity. - How is this useful? Do we need this in addition to location name and location activity description?
-- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category. We propose to add missing data types to this list and to move the admin units from this list and make it its own category within location reach.    
-- **Geospatial Attributes**: [Administrative](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/administrative/) and [Point](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/)
+- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category. We propose to add missing data types to this list and to move the admin units from this list and make it its own category within location reach and geospatial attributes.    
+- **Geospatial Attributes**: [Administrative Units](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/administrative/) and [Point](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/) -> to be expanded to Point, Line and Polygon for exact locations and administrative units for approximate locations.
 
 ## b. We propose the following additional requirements
 - **Field ID**: links all relevant attributes of the activity / subactivities at a specific location 
 - **[IATI Location ID](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/)**: ID of the coordinates according to a repository
 - **Location name**: It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or province x). This would further specify/change the current IATI definition.
+- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category. We propose to add missing data types to this list and to move the admin units from this list and make it its own category within location reach and geospatial attributes.    
 - **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact (= Code 1)" OR three "approximate" categories (Code 2 exact location is yet unknown, Code 3 location is an admin unit, Code 4 exact location not to be disclosed due to security reasons)
 - **Location (Sub-)Activity Status for each location using the same categories as the [IATI-Activity Status](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)** In case there are no disaggregated data avalaible, the overall activity status could be assigned to all locations. 
 - **Geospatial Attributes (addition)**: coordinates (point, line, polygon) according to   OR admin unit polygon from an [administrative (unit) repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/data_model.md#administrative-boundaries) OR other sector-specifi polygon repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
 
 ## c. Recommended, but optional
-- **Planned or actual start date of activity at the location**
-- **Planned or actual end date of the activity at the location**
+- **Planned or actual start and / or end date of activity at the location** using the same format as [IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/). If there are no disaggregated data, you may assing the project- / activity-level date/s to all respective locations.
+- **Date of data collection or latest update** if not already covered at project-level
 - **Publishing restrictions due to security reasons**: Although optional, this issue is considered very important by all participants so far. We propose to leave the publication rules up to the publishers, but to make some recommendations to raise awareness of security issues, especially in fragile contexts. One general recommendation could be for each publisher to decide if they only publish approximate locations (e.g. at admin unit 2 level) as a general rule or to decide for every location at country office level, if its exact coordinates should be published, or only its approximate location at admin unit level or if the location should not be published at all.
-- **Date of data collection or latest update**
-
-## d. Not needed at the moment 
-- **ESG categorisation of location types**
 
 
 
