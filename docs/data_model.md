@@ -1,26 +1,51 @@
-The **Project Location Data Model** to be standardized is a combination of:  
-- [location-specific](#current-draft-of-location-level-attributes-for-the-standard),  
-- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) = IATI-activity-specific and  
+The **Location Data Model** to be standardized is a combination of:  
+- [project-specific](#current-draft-of-project-level-attributes-for-the-standard) = IATI-activity-specific
+- [location-specific](#current-draft-of-location-level-attributes-for-the-standard), and  
 - geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)  
 that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
 
 
+---
+
+# Current Draft of Project-level = IATI Activity-level Attributes for the Standard
+
+## a. Already required in the IATI Standard:
+- **Project ID = IATI activity ID using the [IATI identifier rules](https://iatistandard.org/en/guidance/standard-overview/activity-information/creating-iati-identifiers/)**
+- **Data Publisher using the [IATI Organisaton Identifier](https://iatistandard.org/en/guidance/publishing-data/how-to-publish-data/how-to-create-your-iati-organisation-identifier/)**
+- **Project Title = [Activity Title](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**
+- **Project Description = [IATI Activity Description](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**: must be formulated in a way that external parties can understand it as well
+- **Project Status = [IATI-Activity Status](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)**
+- **Project Date = [IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**
+- **Project Sector = IATI Sector Vocabulary No 1**: OECD DAC5-Subsector Code (= 5-digit CRS-Code) and DAC5-Subsector Name [DAC5 Digit Sector](https://iatistandard.org/en/iati-standard/203/codelists/sector/); See also: [Activity thematic focus](https://iatistandard.org/en/guidance/standard-guidance/activity-thematic-focus/)
+- **Project Recipient Country / Region**: [IATI code list for countries OR regions](https://iatistandard.org/en/iati-standard/203/codelists/sector/)
+- **Project Donor OR Client (of the project, upstream) = [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/)**
+
+## b. Additional project-level data requirements proposed by our initiative:
+- **Type of Financing Instrument**: [IATI codelist finance type](https://iatistandard.org/en/iati-standard/203/codelists/financetype/)
+- **Name of Project Executing / Implementing Agency(ies) (of the project, downstream)**: [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/) 
+
+## c. Optional project-level data types highly recommended by the IATI secretariat and our initiative:
+- **Last updated datetime** 
+- **Language Code** 
+
+
 # Current Draft of Location-level Attributes for the Standard
 
-## a. Required in IATI
-- **[Activity Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/activity-description/)**: A description that qualifies the activity taking place at the location. This should not duplicate information provided in the main activity description, and should typically be used to distinguish between activities at multiple locations within a single iati-activity record.
-- **[Location Reach](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/)**: where the activity takes place OR the location of the beneficiaries / target groups 
-- **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact" OR three "approximate" categories (yet unknown, admin unit, security)
-- **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/)**: A description that qualifies the location, not the activity.
-- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category.
+## a. Already required in IATI
+- **[Location Activity Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/activity-description/)**: A description that qualifies the activity taking place at the location. This should not duplicate information provided in the main (project-level) activity description, and should typically be used to distinguish between activities at multiple locations within a single iati-activity record.
+- **[Location Reach](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/)**: where the activity is carried out (= Code 1) OR the location of the intended beneficiaries / target groups (= Code 2)
+- **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact" OR three "approximate" categories (yet unknown, admin unit, security) -> details see below 
+- **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/)**: A description that qualifies the location, not the activity. - How is this useful? Do we need this in addition to location name and location activity description?
+- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category. We propose to add missing data types to this list and to move the admin units from this list and make it its own category within location reach.    
 - **Geospatial Attributes**: [Administrative](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/administrative/) and [Point](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/)
 
 ## b. We propose the following additional requirements
 - **Field ID**: links all relevant attributes of the activity / subactivities at a specific location 
 - **[IATI Location ID](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/)**: ID of the coordinates according to a repository
 - **Location name**: It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or province x). This would further specify/change the current IATI definition.
-- **Location (Sub-)Activity Status OR Location (Activity Description) Status**
-- **Geospatial Attributes (addition)**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/data_model.md#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
+- **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact (= Code 1)" OR three "approximate" categories (Code 2 exact location is yet unknown, Code 3 location is an admin unit, Code 4 exact location not to be disclosed due to security reasons)
+- **Location (Sub-)Activity Status for each location using the same categories as the [IATI-Activity Status](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/)** In case there are no disaggregated data avalaible, the overall activity status could be assigned to all locations. 
+- **Geospatial Attributes (addition)**: coordinates (point, line, polygon) according to   OR admin unit polygon from an [administrative (unit) repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/data_model.md#administrative-boundaries) OR other sector-specifi polygon repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
 
 ## c. Recommended, but optional
 - **Planned or actual start date of activity at the location**
@@ -31,35 +56,9 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 ## d. Not needed at the moment 
 - **ESG categorisation of location types**
 
----
 
-# Current Draft of Project-level Attributes for the Standard
 
-## a. Required in IATI
-- **[IATI identifier](https://iatistandard.org/en/guidance/standard-overview/activity-information/creating-iati-identifiers/)**
-- **[IATI Organisaton Identifier](https://iatistandard.org/en/guidance/publishing-data/how-to-publish-data/how-to-create-your-iati-organisation-identifier/)**
-- **[Activity Title](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**
-- **[IATI Activity Description](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**: must be formulated in a way that external parties can understand it as well
-- **[IATI-Activity Status](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**: create for every project location 
-- **[IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**
-- **IATI Sector Vocabulary No 1**: OECD DAC5-Subsector Code (= 5-digit CRS-Code) and DAC5-Subsector Name [DAC5 Digit Sector](https://iatistandard.org/en/iati-standard/203/codelists/sector/); See also: [Activity thematic focus](https://iatistandard.org/en/guidance/standard-guidance/activity-thematic-focus/)
-- **Recipient-Country / -Region**: [IATI code list for countries OR regions](https://iatistandard.org/en/iati-standard/203/codelists/sector/)
-- **Project Status**: existing list of IATI categories in [activity type codelist]((https://iatistandard.org/en/iati-standard/203/codelists/sector/))
-- **Donor OR Client (of the project, upstream)**: [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/)
-- 
-
-## b. Our additional required recommendations
-- **Financing Instrument**: [IATI codelist finance type](https://iatistandard.org/en/iati-standard/203/codelists/financetype/)
-- **Project Executing / Implementing Agency(ies) (of the project, downstream)**: [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/) 
-
-## c. Recommended, but optional
-- **Last updated datetime** 
-- **Language Code** 
-
-## d. Not needed at the moment 
-- **ESG categorisation of the project**
-
----
+--------------------------------------------
 
 We recommend not to use the following IATI standard elements for our proposed new standard core scheme - all to be discussed:  
 - [Geographic Location Class](https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/) because it conflicts with the proposed location type scheme without adding value. It contains only four categories - whether the location refers to a structure, a populated place (e.g. city or village), an administrative division, or another topological feature (e.g. river, nature reserve). Since the location types are much more precise, this does not add value.  
