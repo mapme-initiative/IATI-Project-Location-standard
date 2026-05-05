@@ -8,23 +8,24 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 # Current Draft of Location-level Attributes for the Standard
 
 ## a. Required in IATI
-- **[Activity Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/activity-description/)**: description that qualifies the activity is taking place at the location
+- **[Activity Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/activity-description/)**: A description that qualifies the activity taking place at the location. This should not duplicate information provided in the main activity description, and should typically be used to distinguish between activities at multiple locations within a single iati-activity record.
 - **[Location Reach](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/)**: where the activity takes place OR the location of the beneficiaries / target groups 
 - **[Geographic Exactness](https://mapme-initiative.github.io/IATI-Project-Location-Standard/data_model/)**: to be extended to "exact" OR three "approximate" categories (yet unknown, admin unit, security)
-- **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/)**: description that qulifies the location
-- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)** 
+- **[Location Description](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/)**: A description that qualifies the location, not the activity.
+- **[Location Type (Name)](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/)**: Including Location Type Code, Location Type Reach, Geodata Type and IATI Category.
+- **Geospatial Attributes**: [Administrative](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/administrative/) and [Point](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/)
 
-## b. Our additional required recommendations
+## b. We propose the following additional requirements
 - **Field ID**: links all relevant attributes of the activity / subactivities at a specific location 
 - **[IATI Location ID](https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/)**: ID of the coordinates according to a repository
-- **Location name**: should clearly refer to the name of the respective asset / respectively activity
+- **Location name**: It should clearly refer to the name of the respective asset ( e.g. rainbow girls school) respectively activity (voucher scheme No 5 target area B), not to be confused with the name of the related community or admin unit(e.g., “village Ksar” or province x). This would further specify/change the current IATI definition.
 - **Location (Sub-)Activity Status OR Location (Activity Description) Status**
-- **Geospatial Attributes**
+- **Geospatial Attributes (addition)**: coordinates (point, line, polygon) OR admin unit polygon from an [administrative (unit) repository](https://github.com/mapme-initiative/IATI-Project-Location-Standard/blob/main/docs/data_model.md#administrative-boundaries) OR other sector-specifi polyong repository like the [IUCN WDPA Protected Areas repository](https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA)
 
 ## c. Recommended, but optional
 - **Planned or actual start date of activity at the location**
 - **Planned or actual end date of the activity at the location**
-- **Publishing restrictions due to security reasons**
+- **Publishing restrictions due to security reasons**: Although optional, this issue is considered very important by all participants so far. We propose to leave the publication rules up to the publishers, but to make some recommendations to raise awareness of security issues, especially in fragile contexts. One general recommendation could be for each publisher to decide if they only publish approximate locations (e.g. at admin unit 2 level) as a general rule or to decide for every location at country office level, if its exact coordinates should be published, or only its approximate location at admin unit level or if the location should not be published at all.
 - **Date of data collection or latest update**
 
 ## d. Not needed at the moment 
@@ -41,7 +42,7 @@ that jointly describe a **project location**, as defined [here](https://mapme-in
 - **[IATI Activity Description](https://iatistandard.org/en/guidance/standard-overview/activity-information/key-activity-information-to-publish/)**: must be formulated in a way that external parties can understand it as well
 - **[IATI-Activity Status](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**: create for every project location 
 - **[IATI-Activity Date](https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/)**
-- **IATI Sector Vocabulary No 1**: OECD DAC5-Subsector Code and DAC5-Subsector Name
+- **IATI Sector Vocabulary No 1**: OECD DAC5-Subsector Code (= 5-digit CRS-Code) and DAC5-Subsector Name [DAC5 Digit Sector](https://iatistandard.org/en/iati-standard/203/codelists/sector/); See also: [Activity thematic focus](https://iatistandard.org/en/guidance/standard-guidance/activity-thematic-focus/)
 - **Recipient-Country / -Region**: [IATI code list for countries OR regions](https://iatistandard.org/en/iati-standard/203/codelists/sector/)
 - **Project Status**: existing list of IATI categories in [activity type codelist]((https://iatistandard.org/en/iati-standard/203/codelists/sector/))
 - **Donor OR Client (of the project, upstream)**: [IATI Participating Organizations](https://iatistandard.org/en/guidance/standard-guidance/activity-participants/)
