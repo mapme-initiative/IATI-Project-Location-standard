@@ -1,5 +1,7 @@
 # Collecting project locations data
 
+---
+
 ## What kind of data is collected? 
 *A Project location is defined as a set of one or more spatial features and additional attributes that are part of a financially supported activity, where it is not feasible to make any further geographical distinctions regarding funding.* 
 
@@ -11,12 +13,14 @@ Examples:
 
 2. A project financially supports the construction of irrigation infrastructure that benefits a group of small-scale farmers. The irrigation infrastructure (=output) is composed of multiple features (e.g. weirs and watercourses) that are mapped as a collection of features (i.e. multiple points). Furthermore, remote sensing data is consulted to measure project outcomes (e.g. by quantifying changes in agricultural productivity). In this case, geospatial information on outcome areas (i.e. the irrigated fields that make use of and benefit from the irrigation infrastructure) should also be submitted.
 
+---
+
 ## Initial data collection and frequency of updates
 We strongly encourage project executing agencies (PEA) or consultant staff to collect project locations as early as possible, to optimize the potential utility of such data throughout the entire project cycle. Ideally, data should already be collected during the project preparation phase, e.g. as part of a feasibility study.
 
 If exact locations cannot be determined at this stage, approximate location should be used (see below) and rechecked later during project appraisal and inception stages, where it may be possible to update approximate to exact locations. During project implementation, data should be updated at least once annually in project progress reviews. This ensures that any potential changes are reflected in the geographical allocation of funds, which are common in International Aid and Development Cooperation projects.
 
-
+---
 
 ## Geographical accuracy, geometry, and aggregation 
 The IATI standard describes a project location as **exact** or **approximate**. Exact locations refer to the geographical endpoints of financial flows and are reported with precise coordinates. All exact coordinates in Excel must be collected using WGS 84 (EPSG 4326) as the coordinate reference system, which is the standard for web mapping applications. Coordinates ("Latitude" and "Longitude" columns) have to be provided in decimal format with an accuracy of at least 5 digits after the separator (i.e. 00.00000).
@@ -39,6 +43,8 @@ While there are no strict rules governing the choice of geometry type and aggreg
 
 In case you are unsure, please get in touch with your project partner to discuss the necessary details. 
 
+---
+
 ## Collection of point-locations
 
 Point-loctions should be collected in **.XLSX** and **.GeoJSON** formats.   
@@ -46,6 +52,8 @@ Point-loctions should be collected in **.XLSX** and **.GeoJSON** formats.
 ### Using Excel for point-locations
  
 The **.XLSX** format is best suited, if your institution does not know how to handle geospatial data and has no former experience with Geographic Information System (GIS) software. In this case you can use the most recent version of our [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to collect all relevant location-specific information.
+
+---
 
 ## Collection of point-, line-, and polygon-locations using GIS software
 For the collection of point-locations, the use of **.GeoJSON** is optional but recommended for its reliability and flexibility. For the collection of line- or polygon-locations, only **.GeoJSON** format is accepted.
