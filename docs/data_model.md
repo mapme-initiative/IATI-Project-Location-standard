@@ -1,8 +1,7 @@
 The **Location Data Model** to be standardized is a combination of:  
 - [project-specific](#current-draft-of-project-level-attributes-for-the-standard) = IATI-activity-specific
-- [location-specific](#current-draft-of-location-level-attributes-for-the-standard), and  
-- geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries)  
-that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/). 
+- [location-specific](#current-draft-of-location-level-attributes-for-the-standard) 
+- geospatial attributes in the form of coordinates or [administrative unit boundaries](#administrative-boundaries) that jointly describe a **project location**, as defined [here](https://mapme-initiative.github.io/IATI-Project-Location-Standard/faqs/)
 
 
 ---
