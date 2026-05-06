@@ -1,7 +1,8 @@
 # Discussions
-
+---
 Welcome to the MAPME Community of Practice discussion boards. Here you can share feedback, ask questions, and contribute ideas to help shape and improve the IATI Project Location Standard.
 
+---
 ## Choose a topic below to join the discussion directly on GitHub:
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin:1.5rem 0;">
