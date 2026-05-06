@@ -17,6 +17,7 @@ Examples:
 We strongly encourage project executing agencies (PEA) or consultant staff to collect project locations as early as possible, to optimize the potential utility of such data throughout the entire project cycle. Ideally, data should already be collected during the project preparation phase, e.g. as part of a feasibility study.
 
 If exact locations cannot be determined at this stage, approximate location should be used (see below) and rechecked later during project appraisal and inception stages, where it may be possible to update approximate to exact locations. During project implementation, data should be updated at least once annually in project progress reviews. This ensures that any potential changes are reflected in the geographical allocation of funds, which are common in International Aid and Development Cooperation projects.
+
 ---
 
 ## Geographical accuracy, geometry, and aggregation 
@@ -38,13 +39,15 @@ While there are no strict rules governing the choice of geometry type and aggreg
 - *Avoid security risks*: data should not be collected on an aggregation level that might expose or endanger vulnerable groups, such as refugees or minorities that might face discrimination
 - Follow a reasonable *cost-benefit ratio* for collecting and producing the required information
 
-In case you are unsure, please get in touch with your project partner to discuss the necessary details. 
+In case you are unsure, please get in touch with your project partner to discuss the necessary details.
+
 ---
 
 ## Collection of point-locations
 Point-loctions should be collected in **.XLSX** and **.GeoJSON** formats.   
 ### Using Excel for point-locations
 The **.XLSX** format is best suited, if your institution does not know how to handle geospatial data and has no former experience with Geographic Information System (GIS) software. In this case you can use the most recent version of our [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to collect all relevant location-specific information.
+
 ---
 
 ## Collection of point-, line-, and polygon-locations using GIS software
