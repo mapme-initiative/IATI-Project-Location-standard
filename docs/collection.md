@@ -1,5 +1,4 @@
 # Collecting project locations data
-
 ---
 
 ## What kind of data is collected? 
@@ -12,14 +11,12 @@ Examples:
 1. A project financially supports the construction of a hospital. The hospital is built at a specific location. It is represented as a single feature (point), which indicates the spatial location of the hospital (=output). Project outcomes are measured using non-geospatial data (e.g. patient statistics), hence no additional project locations information needs to be collected. 
 
 2. A project financially supports the construction of irrigation infrastructure that benefits a group of small-scale farmers. The irrigation infrastructure (=output) is composed of multiple features (e.g. weirs and watercourses) that are mapped as a collection of features (i.e. multiple points). Furthermore, remote sensing data is consulted to measure project outcomes (e.g. by quantifying changes in agricultural productivity). In this case, geospatial information on outcome areas (i.e. the irrigated fields that make use of and benefit from the irrigation infrastructure) should also be submitted.
-
 ---
 
 ## Initial data collection and frequency of updates
 We strongly encourage project executing agencies (PEA) or consultant staff to collect project locations as early as possible, to optimize the potential utility of such data throughout the entire project cycle. Ideally, data should already be collected during the project preparation phase, e.g. as part of a feasibility study.
 
 If exact locations cannot be determined at this stage, approximate location should be used (see below) and rechecked later during project appraisal and inception stages, where it may be possible to update approximate to exact locations. During project implementation, data should be updated at least once annually in project progress reviews. This ensures that any potential changes are reflected in the geographical allocation of funds, which are common in International Aid and Development Cooperation projects.
-
 ---
 
 ## Geographical accuracy, geometry, and aggregation 
@@ -42,28 +39,20 @@ While there are no strict rules governing the choice of geometry type and aggreg
 - Follow a reasonable *cost-benefit ratio* for collecting and producing the required information
 
 In case you are unsure, please get in touch with your project partner to discuss the necessary details. 
-
 ---
 
 ## Collection of point-locations
-
 Point-loctions should be collected in **.XLSX** and **.GeoJSON** formats.   
-
 ### Using Excel for point-locations
- 
 The **.XLSX** format is best suited, if your institution does not know how to handle geospatial data and has no former experience with Geographic Information System (GIS) software. In this case you can use the most recent version of our [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to collect all relevant location-specific information.
-
 ---
 
 ## Collection of point-, line-, and polygon-locations using GIS software
 For the collection of point-locations, the use of **.GeoJSON** is optional but recommended for its reliability and flexibility. For the collection of line- or polygon-locations, only **.GeoJSON** format is accepted.
 
 We highlight two common cases for generating the required data: 
-
  1. **Desktop-production**: For manual data collection, we recommend using the [Excel templates](https://github.com/mapme-initiative/IATI-Project-Location-Standard/tree/main/docs/assets/excels) to store all attributes and merging this information with spatial information (feature geometries) in a GIS software. Since the Excel templates are pre-configured, it is easier to provide data that is compliant with the data-model and pass the validation check (not yet implemented) as a way to ensure data quality. 
-
  2. **Database-extraction**: If location information is available in a geospatial database, it is possible to extract and transform the data into field-mappings that also match our requirements. In these cases, the data-model can be provided as a [JSON schema](./annex2.md). This supports batch conversions as a starting point; any missing information can then be manually added.
-
 
 If GeoJSON format is used, multi-point, -line or -polygon features can also be submitted to reduce data redundancies. This can be useful if the same project activity benefits multiple sites (e.g. all irrigated fields that benefit from an irrigation infrastructure). You can also use multi geometry feature collections if your submitted data contains different geometry formats. 
 
