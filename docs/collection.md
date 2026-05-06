@@ -11,6 +11,7 @@ Examples:
 1. A project financially supports the construction of a hospital. The hospital is built at a specific location. It is represented as a single feature (point), which indicates the spatial location of the hospital (=output). Project outcomes are measured using non-geospatial data (e.g. patient statistics), hence no additional project locations information needs to be collected. 
 
 2. A project financially supports the construction of irrigation infrastructure that benefits a group of small-scale farmers. The irrigation infrastructure (=output) is composed of multiple features (e.g. weirs and watercourses) that are mapped as a collection of features (i.e. multiple points). Furthermore, remote sensing data is consulted to measure project outcomes (e.g. by quantifying changes in agricultural productivity). In this case, geospatial information on outcome areas (i.e. the irrigated fields that make use of and benefit from the irrigation infrastructure) should also be submitted.
+
 ---
 
 ## Initial data collection and frequency of updates
