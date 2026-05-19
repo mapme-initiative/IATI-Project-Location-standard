@@ -103,7 +103,8 @@ nav:
   - Home: index.md
   - Introduction: introduction.md
   - Definitions / FAQs: faqs.md
-  - Data Model: data_model.md    
+  - Data Model: data_model.md
+  - Our Proposal to IATI: proposal.md
   - Data Collection: collection.md
   - Validation: validation.md
   - Disclaimer: disclaimer.md
